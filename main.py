@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 app = Flask(__name__)
 version = os.getenv("APP_VERSION", "unknown")
