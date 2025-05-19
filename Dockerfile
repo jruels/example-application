@@ -1,4 +1,4 @@
-FROM python:3.8-alpine
+FROM python:3.10.17-alpine3.21
 WORKDIR /py-app
 COPY . .
 RUN pip3 install flask
