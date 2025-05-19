@@ -26,6 +26,8 @@ jobs:
           context: .
           push: true
           tags: docker.io/${{ secrets.REGISTRY_USER }}/example-application:${{ env.TAG_NAME }}
+          build-args: |
+            APP_VERSION=${{ env.TAG_NAME }}
 
   trigger-deployment-update:
     runs-on: ubuntu-latest
